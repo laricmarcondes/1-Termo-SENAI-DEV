@@ -1,0 +1,66 @@
+<br />
+
+<h2><i>Cadastro</i></h2>
+
+<br />
+
+<main>
+    
+        <img src="/img/sem_foto_perfil.png" style="width: 3em" alt="sem foto" title="sem foto"/>
+
+        <form method="POST" action='@Url.Action("CadastrarCliente", "Cadastro")'>
+                <div>
+                    <label for="nome">Nome completo:</label>
+                    <br />
+                    <input id="nome" type="text" maxlength="20" minlength="3" name="nome" />
+                </div>
+    
+                <div>
+                    <label for="email">E-mail:</label>
+                    <br />
+                    <input id="email" type="text" maxlength="20" minlength="3" name="email" />
+                </div>
+
+                <div>
+                    <label for="confirmar">Confirmar e-mail:</label>
+                    <br />
+                    <input id="confirmar" type="text" maxlength="20" minlength="3" name="confirmar-email" />
+                </div>
+
+                <div>
+                    <label for="nascimento">Data de nascimento:</label>
+                    <br />
+                    <input id="nascimento" type="date" maxlength="20" minlength="3" name="data-nascimento" />
+                </div>
+
+                <div>
+                    <label for="telefone">Telefone:</label>
+                    <br />
+                    <input id="telefone" type="text" maxlength="20" minlength="3" name="telefone" />
+                </div>
+
+                <div>
+                    <label for="senha">Senha:</label>
+                    <br />
+                    <input id="senha" type="password" maxlength="20" minlength="6" name="senha" />
+                </div>
+
+                <div>
+                    <label for="confirmar">Confirmar senha:</label>
+                    <br />
+                    <input id="confirmar" type="password" maxlength="20" minlength="6" name="confirmar-senha" />
+                </div>
+
+                    <div class="cancelar-e-enviar">
+                        <input type="submit" value="Cadastrar" />
+                    </div>
+
+                <br />
+                    </form>
+    </main>
+
+    <br />
+
+    <footer>
+
+    </footer>

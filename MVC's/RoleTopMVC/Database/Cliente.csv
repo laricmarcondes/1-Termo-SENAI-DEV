@@ -1,0 +1,3 @@
+tipo_usuario=0;nome=Administrador;email=admin@email.com;senha=12345678;telefone=;data_nascimento= 00:00:00
+tipo_usuario=1;nome=larissa carvalho;email=lari.c@gmail.com;senha=123456;telefone=11 123456;data_nascimento=02/02/2000 00:00:00
+tipo_usuario=1;nome=mayara;email=mayara@email.com;senha=123456;telefone=11 123456;data_nascimento=02/02/2000 00:00:00

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rolê Top</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="img/logo.png" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="css/rolê top style.css" />
+    <script src="https://kit.fontawesome.com/349a64cb04.js"></script>
+
+</head>
+
+<body>
+    <header>
+            <div id="logo-area">
+                    <img id="logo" src="img/logo.png" alt="Rolê Top" title="logo" />
+                    <hgroup>
+                        <h1>Rolê Top</h1>
+                    </hgroup>
+                </div>
+        <nav>
+            <div class="section-container">
+                <ul>
+                    <li id="bt-mobile-menu">
+                        <a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
+                            <i class="fas fa-bars" aria-hidden="true">
+                            </i>
+                        </a>
+                    </li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="rolê top index.html">Início</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="galeria rolê top.html">Galeria</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="contato rolê top.html">Contato</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="login rolê top.html">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="banner">
+            <div class="section-container">
+                <div class="flex-group banner-section">
+                    <div class="banner-container">
+                        <img src="img/eventos-tela inicial.jpg" style="width: 13em" alt="eventos" title="eventos" />
+                    </div>
+
+                    <div class="banner-container">
+                        <p>
+                            <strong>Agende seu evento <br />
+                                fazendo o login ou<br />
+                                cadastre-se
+                            </strong>
+                        </p>
+                    </div>
+        </section>
+
+        <section id="calendário">
+            <img src="img/calendário1.jpg" style="width: 20em" alt="calendário" title="calendário" />
+        </section>
+
+
+
+        <div class="sobre-e-estrutura">
+            <a href="sobre rolê top.html#sobre nós">Sobre nós</a>
+
+            <br />
+
+            <a href="estrutura rolê top.html#estrutura do local">Estrutura do local</a>
+        </div>
+    </main>
+
+    <section id="local">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.8869961505543!2d-46.648477085071065!3d-23.53656648469522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5843deade6e3%3A0x124f377d06c7e71f!2sAlameda+Bar%C3%A3o+de+Limeira%2C+539+-+Campos+El%C3%ADseos%2C+S%C3%A3o+Paulo+-+SP%2C+01202-001!5e0!3m2!1sen!2sbr!4v1550223658410"
+            width="100%" height="50%" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </section>
+
+    <address>
+        Avenida de Limeira, 539 - Campos Elíseos - SP
+    </address>
+
+    <a href="#">Voltar para o topo!</a>
+
+    <br />
+
+    <div class="faq-e-chat">
+        <a href="FAQ">FAQ</a>
+        <a href="Chat online">Chat online</a>
+    </div>
+
+    <footer>
+
+    </footer>
+
+    <script>
+        function toggleMobileMenu() {
+            var ul = document.querySelector("nav ul");
+            var commonButtons = document.querySelectorAll("nav .bt-common-menu");
+            var icon = document.querySelector(".icon > i");
+
+            ul.classList.toggle("mobile-mode");
+
+            if (icon.classList.contains("fa-bars")) {
+                icon.classList.remove("fa-bars");
+                icon.classList.remove("fa");
+
+                icon.classList.add("fas");
+                icon.classList.add("fa-angle-down");
+            } else {
+                icon.classList.remove("fas");
+                icon.classList.remove("fa-angle-down");
+
+                icon.classList.add("fa");
+                icon.classList.add("fa-bars");
+            }
+
+            for (var button of commonButtons) {
+                button.classList.toggle("active");
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>

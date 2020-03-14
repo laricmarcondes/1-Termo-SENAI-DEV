@@ -1,0 +1,28 @@
+* {
+    margin: 3;
+    padding:1;
+}
+
+body {
+    font-family: 'Calibri', 'Open Sans', 'sans-serif';
+    background-color: #7fb0f0;
+    font-size: 1.2em;
+    text-align: center;
+
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: 'Myra';
+}
+
+h1{
+    display: none;
+}
+
+ol {
+    text-align: initial;
+}
+
+
+/* colocar uma quebra de linha aqui */
+

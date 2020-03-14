@@ -1,0 +1,16 @@
+{
+  "FilePath": "c:\\Users\\43216437833\\Documents\\MVC's\\McBonaldsMVC\\McBonaldsMVC.csproj",
+  "Configuration": {
+    "ConfigurationName": "MVC-2.1",
+    "LanguageVersion": "2.1",
+    "Extensions": [
+      {
+        "ExtensionName": "MVC-2.1"
+      }
+    ]
+  },
+  "ProjectWorkspaceState": null,
+  "RootNamespace": "McBonaldsMVC",
+  "Documents": [],
+  "SerializationFormat": "0.2"
+}

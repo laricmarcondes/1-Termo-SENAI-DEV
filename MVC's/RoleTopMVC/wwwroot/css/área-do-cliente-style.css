@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Calibri', 'Open Sans', sans-serif;
+    text-align: center;
+    background-color: #BE3966;
+}
+
+h1{
+    display: none;
+}
+
+section {
+    text-align: center;
+}
+
+
+main {
+    padding: 1em;
+    background-color: #BE3966;
+}
+
+h2 {
+    padding: 1.3em;
+}
+
+h3 {
+    padding: 1.3em;
+}
+
+footer {
+    background-color: #eaa93d;
+    height: 3em;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    list-style-type: none;
+}
+
+#voltar {
+    text-align: left;
+    font-size: 1.2em;
+}
+/******************************************************************
+                            LOGO - INÍCIO
+******************************************************************/
+
+#logo-area {
+    background-image: url(img/fundo_logo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 10px;
+}
+
+#logo {
+    height:20%;
+    width: 15%;
+}
+
+/******************************************************************
+                            LOGO - FIM
+******************************************************************/
+
+.nome-e-foto-do-cliente {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0.5em;
+    background-color: #ffffff;
+    justify-content: flex-end;
+}
+
+.nome-e-foto-do-cliente > p {
+    padding: 0.7em; 
+    font-size: 1.2em;
+}
+
+
+.pagamento {
+    padding: 2em;
+}
+
+.serviço-adicional {
+    padding: 1em;
+}
+
+p {
+    font-size: 1.3em;
+}
+
+form input, form select {
+    width: 25%;
+    height: 25px;
+    border: none;
+    text-align: left;
+    padding: 0 2px;
+}
+
+form input[type="submit"] {
+    border: #000000;
+    margin: 20px 0;
+    height: 2em;
+    border-radius: 3px;
+    font-weight: bold;
+    text-align: center;
+}
+
+form input[type="submit"]:hover {
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+
+
+textarea {
+    width: 20%;
+}
+
+table {
+    text-align: center;
+    color: #000000;
+    border: 1px dashed #ff9933;
+    width: 100%;
+    padding: 5px;
+    word-break: normal;
+}
+
+
+
+nav #bt-mobile-menu {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    
+    nav #bt-mobile-menu {
+        display: block;
+    }
+
+    nav .bt-common-menu {
+        display: none;
+
+    }
+
+    nav .bt-common-menu.active {
+        display: block;
+    }
+
+    nav ul.mobile-mode {
+        display: flex;
+        flex-direction: column;
+    }
+}

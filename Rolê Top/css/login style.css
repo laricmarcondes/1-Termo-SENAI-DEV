@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Calibri', 'Open Sans', sans-serif;
+    text-align: center;
+    background-color: #BE3966;
+}
+
+h1{
+    display: none;
+}
+
+section {
+    text-align: center;
+}
+
+main {
+    background-color: #c8c1b5;
+    padding: 1em;
+}
+
+h2 {
+    padding: 1.3em;
+}
+
+footer {
+    background-color: #eaa93d;
+    height: 3em;
+}
+
+/******************************************************************
+                            NAV - INÍCIO
+******************************************************************/
+
+nav {
+    background-color: #eaa93d;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    font-size: 1.3em;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+nav ul > li {
+    width: 100%;
+    text-align: center;
+}
+
+nav ul > li > a {
+	display: block;
+	padding: 0.7em;
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+nav ul > li > a:hover {
+    background-color:#BE3966;
+    color: #000000;
+}
+
+a.active {
+    color: #BE3966;
+}
+
+a {
+    text-align: right;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/******************************************************************
+                            NAV - FIM
+******************************************************************/
+
+/******************************************************************
+                            LOGO - INÍCIO
+******************************************************************/
+
+#logo-area {
+    background-image: url(img/fundo_logo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 10px;
+}
+
+#logo {
+    height:20%;
+    width: 15%;
+}
+
+/******************************************************************
+                            LOGO - FIM
+******************************************************************/
+
+.fa-bars:before {
+    content: "\f0c9";
+}
+
+.faq-e-chat {
+    text-align: right;
+    padding-block-start: 8em;
+}
+
+form * {
+    margin: 5px 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+form input, form select {
+    width: 25%;
+    height: 23px;
+    border-color: #000000;
+    text-align: left;
+    padding: 0 2px;
+    border-radius: 3em;
+}  
+
+.entrar-e-cadastro > a {
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    list-style-type: none;
+}
+
+nav #bt-mobile-menu {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    
+    nav #bt-mobile-menu {
+        display: block;
+    }
+
+    nav .bt-common-menu {
+        display: none;
+
+    }
+
+    nav .bt-common-menu.active {
+        display: block;
+    }
+
+    nav ul.mobile-mode {
+        display: flex;
+        flex-direction: column;
+    }
+}

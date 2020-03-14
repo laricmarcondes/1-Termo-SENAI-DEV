@@ -1,0 +1,11 @@
+C:\Users\43216437833\Documents\Desafios\Exercício17\obj\Debug\netcoreapp2.2\Exercício17.csprojAssemblyReference.cache
+C:\Users\43216437833\Documents\Desafios\Exercício17\obj\Debug\netcoreapp2.2\Exercício17.csproj.CoreCompileInputs.cache
+C:\Users\43216437833\Documents\Desafios\Exercício17\obj\Debug\netcoreapp2.2\Exercício17.AssemblyInfoInputs.cache
+C:\Users\43216437833\Documents\Desafios\Exercício17\obj\Debug\netcoreapp2.2\Exercício17.AssemblyInfo.cs
+C:\Users\43216437833\Documents\Desafios\Exercício17\bin\Debug\netcoreapp2.2\Exercício17.deps.json
+C:\Users\43216437833\Documents\Desafios\Exercício17\bin\Debug\netcoreapp2.2\Exercício17.runtimeconfig.json
+C:\Users\43216437833\Documents\Desafios\Exercício17\bin\Debug\netcoreapp2.2\Exercício17.runtimeconfig.dev.json
+C:\Users\43216437833\Documents\Desafios\Exercício17\bin\Debug\netcoreapp2.2\Exercício17.dll
+C:\Users\43216437833\Documents\Desafios\Exercício17\bin\Debug\netcoreapp2.2\Exercício17.pdb
+C:\Users\43216437833\Documents\Desafios\Exercício17\obj\Debug\netcoreapp2.2\Exercício17.dll
+C:\Users\43216437833\Documents\Desafios\Exercício17\obj\Debug\netcoreapp2.2\Exercício17.pdb

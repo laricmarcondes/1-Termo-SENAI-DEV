@@ -1,0 +1,41 @@
+    <br />
+
+        <h2><i>Login</i></h2>
+
+    <br />
+<main>
+    <form method="POST" action='@Url.Action("Login", "Cliente")'>
+        <div>
+            <label for="email">E-mail:</label>
+            <br />
+            <input id="email" type="text" maxlength="20" minlength="3" name="email" />
+        </div>
+        <div>
+            <label for="senha">Senha:</label>
+            <br />
+            <input id="senha" type="password" maxlength="20" minlength="3" name="senha" />
+        </div>
+        <div class="entrar-e-cadastro">
+        <input type="submit" value="Entrar" />
+        <br />
+
+        <p>OU</p>
+        <br />
+
+        <div id="Link-cadastro">
+            <a href='@Url.Action("Index", "Cadastro")'>Cadastre-se</a>
+        </div>
+
+    </form>
+</main>
+
+    <br />
+
+    <div class="faq_e_chat">
+        <a href="FAQ">FAQ</a>
+        <a href="Chat online">Chat online</a>
+    </div>
+
+    <footer>
+
+    </footer>

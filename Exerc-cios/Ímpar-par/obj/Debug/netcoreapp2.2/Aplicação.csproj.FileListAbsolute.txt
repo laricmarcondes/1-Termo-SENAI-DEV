@@ -1,0 +1,11 @@
+C:\Users\43216437833\Documents\Exercícios\Aplicação\bin\Debug\netcoreapp2.2\Aplicação.deps.json
+C:\Users\43216437833\Documents\Exercícios\Aplicação\bin\Debug\netcoreapp2.2\Aplicação.runtimeconfig.json
+C:\Users\43216437833\Documents\Exercícios\Aplicação\bin\Debug\netcoreapp2.2\Aplicação.runtimeconfig.dev.json
+C:\Users\43216437833\Documents\Exercícios\Aplicação\bin\Debug\netcoreapp2.2\Aplicação.dll
+C:\Users\43216437833\Documents\Exercícios\Aplicação\bin\Debug\netcoreapp2.2\Aplicação.pdb
+C:\Users\43216437833\Documents\Exercícios\Aplicação\obj\Debug\netcoreapp2.2\Aplicação.csprojAssemblyReference.cache
+C:\Users\43216437833\Documents\Exercícios\Aplicação\obj\Debug\netcoreapp2.2\Aplicação.csproj.CoreCompileInputs.cache
+C:\Users\43216437833\Documents\Exercícios\Aplicação\obj\Debug\netcoreapp2.2\Aplicação.AssemblyInfoInputs.cache
+C:\Users\43216437833\Documents\Exercícios\Aplicação\obj\Debug\netcoreapp2.2\Aplicação.AssemblyInfo.cs
+C:\Users\43216437833\Documents\Exercícios\Aplicação\obj\Debug\netcoreapp2.2\Aplicação.dll
+C:\Users\43216437833\Documents\Exercícios\Aplicação\obj\Debug\netcoreapp2.2\Aplicação.pdb

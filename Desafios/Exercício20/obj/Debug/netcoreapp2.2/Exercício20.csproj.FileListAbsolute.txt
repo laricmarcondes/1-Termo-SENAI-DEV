@@ -1,0 +1,11 @@
+C:\Users\43216437833\Documents\Desafios\Exercício20\bin\Debug\netcoreapp2.2\Exercício20.deps.json
+C:\Users\43216437833\Documents\Desafios\Exercício20\bin\Debug\netcoreapp2.2\Exercício20.runtimeconfig.json
+C:\Users\43216437833\Documents\Desafios\Exercício20\bin\Debug\netcoreapp2.2\Exercício20.runtimeconfig.dev.json
+C:\Users\43216437833\Documents\Desafios\Exercício20\bin\Debug\netcoreapp2.2\Exercício20.dll
+C:\Users\43216437833\Documents\Desafios\Exercício20\bin\Debug\netcoreapp2.2\Exercício20.pdb
+C:\Users\43216437833\Documents\Desafios\Exercício20\obj\Debug\netcoreapp2.2\Exercício20.csprojAssemblyReference.cache
+C:\Users\43216437833\Documents\Desafios\Exercício20\obj\Debug\netcoreapp2.2\Exercício20.csproj.CoreCompileInputs.cache
+C:\Users\43216437833\Documents\Desafios\Exercício20\obj\Debug\netcoreapp2.2\Exercício20.AssemblyInfoInputs.cache
+C:\Users\43216437833\Documents\Desafios\Exercício20\obj\Debug\netcoreapp2.2\Exercício20.AssemblyInfo.cs
+C:\Users\43216437833\Documents\Desafios\Exercício20\obj\Debug\netcoreapp2.2\Exercício20.dll
+C:\Users\43216437833\Documents\Desafios\Exercício20\obj\Debug\netcoreapp2.2\Exercício20.pdb

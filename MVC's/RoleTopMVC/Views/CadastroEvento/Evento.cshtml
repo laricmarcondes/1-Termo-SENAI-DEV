@@ -1,0 +1,123 @@
+@model RoleTopMVC.ViewModels.CadastroEventoViewModel
+@{
+    ViewData["Title"] = "Cadastro de ventos - Rolê Top";
+}
+
+    <h2><i>Área do cliente</i></h2>
+
+        <br />
+
+    <div class="nome-e-foto-do-cliente">
+            <p><strong>@Model.NomeCliente</strong></p>
+            <img src="/img/sem_foto_perfil.png" style="width: 3em" alt="sem foto" title="sem foto">
+    </div>
+
+<br />
+
+    <main>
+        <h3>Agende seu evento</h3>
+
+        <form method="POST" action='@Url.Action("Registrar", "CadastroEvento")'>
+
+            <div>
+                    <label for="nome"><i>Nome Completo</i></label>
+                    <br />
+                    <input id="nome" type="text" value ="@Model.Cliente.Nome" name="cliente_nome" />
+            </div>
+
+            <div>
+                    <label for="email"><i>Email</i></label>
+                    <br />
+                    <input id="email" type="text" value ="@Model.Cliente.Email" name="cliente_email" />
+            </div>
+
+            <div>
+                    <label for="telefone"><i>Telefone</i></label>
+                    <br />
+                    <input id="telefone" type="text" value ="@Model.Cliente.Telefone" name="cliente_telefone" />
+            </div>
+
+        <div class="calendário">
+        <p><i>Ecolha o dia e a hora:</i></p>
+        <img src="/img/calendário1.jpg" style="width: 10em" alt="calendário" title="calendário"/>
+        </div>
+
+            <br />
+
+        
+                <div>
+                    <label for="data"><i>Dia:</i></label>
+                    <br />
+                    <input id="data" type="date" maxlength="20" minlength="3" name="data" />
+                </div>
+
+                <div>
+                    <label for="hora"><i>Hora:</i></label>
+                    <br />
+                    <input id="hora" type="time" maxlength="20" minlength="3" name="hora" />
+                </div>
+
+                <div>
+                    <label for="tipoEvento"><i>Tipo de evento:</i></label> <br />
+                    <select id="tipoEvento" name="tipoEvento" required>
+                        <option value="" disabled selected>Selecione</option>
+                        @foreach (var tipoEvento in Model.TipoEvento)
+                        {
+                            <option value=@tipoEvento.Nome>@tipoEvento.Nome por @tipoEvento.Preco
+                                
+                            </option>
+                        }
+                    </select>
+                </div>
+
+                <div>
+                    <label for="descricao"><i>Descrição do evento:</i></label>
+                    <br />
+                    <textarea name="descricao" id="descricao" cols="24" rows="5"></textarea>
+                </div>
+
+            <div class="servicosAdicionais">
+                <label for="tipoEvento"><i>Serviços Adicionais:</i></label> <br />
+            <select id="servicosAdicionais" name="servicosAdicionais" required>
+                        <option value="" disabled selected>Selecione</option>
+                        @foreach (var servicosAdicionais in Model.ServicosAdicionais)
+                        {
+                            <option value=@servicosAdicionais.Nome>@servicosAdicionais.Nome por @servicosAdicionais.Preco
+                                
+                            </option>
+                        }
+                    </select>
+            </div>
+
+            <input type="submit" value="Finalizar cadastro do evento" />
+            <h3>Histórico de eventos</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Hora</th>
+                        <th>Tipo de evento</th>
+                        <th>Descrição</th>
+                        <th>Serviço adicional</th>
+                        <th>Preço</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach( var evento in Model.Evento) {
+                        <tr>
+                            <td>@evento.DataDoEvento.Nome</td>
+                            <td>@evento.Hora.Nome</td>
+                            <td>@evento.TipoEvento.Nome</td>
+                            <td>@evento.Descricao.Nome</td>
+                            <td>@evento.ServicosAdicionais.Nome</td>
+                            <td>@evento.PrecoTotal</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+            </form>
+    </main>
+
+    <footer>
+            
+    </footer>
