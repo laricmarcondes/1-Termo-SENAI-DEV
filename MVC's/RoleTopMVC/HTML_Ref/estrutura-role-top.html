@@ -1,47 +1,64 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <title>Rolê Top</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="img/logo.png" rel="icon" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="css/estrutura-style.css"/>
+    <script src="https://kit.fontawesome.com/349a64cb04.js"></script>
 </head>
+
     <body>
         <header>
             <div id="logo-area">
-                <img id="logo" src="img/logo.png" alt="Rolê Top" title="logo"/>
+                <img id="logo" src="img/logo.png" alt="Rolê Top" title="logo" />
                 <hgroup>
                     <h1>Rolê Top</h1>
                 </hgroup>
             </div>
-
-        <br />
-
-        <a href="rolê-top-index.html#voltar">Voltar</a>
-
-        <br />
+    <nav>
+        <div class="section-container">
+            <ul>
+                <li id="bt-mobile-menu">
+                    <a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
+                        <i class="fas fa-bars" aria-hidden="true">
+                        </i>
+                    </a>
+                </li>
+                <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="rolê-top-index.html">Início</a></li>
+                <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="galeria-rolê-top.html">Galeria</a></li>
+                <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="contato-rolê-top.html">Contato</a></li>
+                <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="estrutura-role-top.html">Estrutura</a></li>
+                <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="login-rolê-top.html">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+        </header>
 
         <h2><i>Estrutura do local</i></h2>
 
         <br />
 
         <main>
-
             <section id="estrutura">
 
                 <div class="estrutura-container">
                     <p>
-                        <strong>Tamanho: 150 x 40m <br />
-                            Banheiro social feminino<br />
-                            Banheiro social masculino<br />
-                            Banheiro para deficiente<br />
-                            Infraestrutura para palco<br />
+                        <strong>Tamanho: 150 x 40m <br /> <br />
+                            Banheiro social feminino<br /> <br />
+                            Banheiro social masculino<br /> <br />
+                            Banheiro para deficiente<br /> <br />
+                            Infraestrutura para palco<br /> <br />
                             Camarim<br />
                         </strong>
                     </p>
                 </div>
         </main>
 
-        <h3><i>Planta baixa do local</i></h3>
+        <br />
+
         <div class="estrutura-container">
                 <div class="planta">
                     <img src="img/planta_baixa.jpg" style="width:22em" alt="planta" title="planta" />
@@ -50,10 +67,37 @@
         </section>
     
         <br />
-
-        <footer>
-            
-        </footer>
+        
+        <script>
+            function toggleMobileMenu() {
+                var ul = document.querySelector("nav ul");
+                var commonButtons = document.querySelectorAll("nav .bt-common-menu");
+                var icon = document.querySelector(".icon > i");
+    
+                ul.classList.toggle("mobile-mode");
+    
+                if (icon.classList.contains("fa-bars")) {
+                    icon.classList.remove("fa-bars");
+                    icon.classList.remove("fa");
+    
+                    icon.classList.add("fas");
+                    icon.classList.add("fa-angle-down");
+                } else {
+                    icon.classList.remove("fas");
+                    icon.classList.remove("fa-angle-down");
+    
+                    icon.classList.add("fa");
+                    icon.classList.add("fa-bars");
+                }
+    
+                for (var button of commonButtons) {
+                    button.classList.toggle("active");
+                }
+    
+            }
+    
+        </script>
 
     </body>
+    
 </html>

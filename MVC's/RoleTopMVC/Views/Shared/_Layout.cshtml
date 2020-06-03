@@ -12,6 +12,7 @@
     {
         <link href="~/css/login-style.css" rel="stylesheet" type="text/css"/> 
         <link href="~/css/galeria-style.css" rel="stylesheet" type="text/css"/>
+        <link href="~/css/estrutura-style.css" rel="stylesheet" type="text/css"/>
         <link href="~/css/contato-style.css" rel="stylesheet" type="text/css"/>
     }
 
@@ -46,9 +47,10 @@
                             </i>
                         </a>
                     </li>
-                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Home" asp-action="Index" class="active">Início</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Home" asp-action="Index">Início</a></li>
                     <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Galeria" asp-action="Fotos">Galeria</a></li>
                     <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Contato" asp-action="Info">Contato</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" asp-controller="Estrutura" asp-action="planta">Estrutura</a></li>
                     @if(string.IsNullOrEmpty(@Model.UsuarioEmail))
                     {
                     

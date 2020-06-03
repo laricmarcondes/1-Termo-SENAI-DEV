@@ -1,19 +1,19 @@
 @model RoleTopMVC.ViewModels.DashboardViewModel
 <main>
         <h2>Dashboard</h2>
-        <section id="status-cadstros">
+        <section id="status-eventos">
             <h3>Status dos eventos</h3>
             <br />
             <div id="painel">
-                <div class="box-status-eventos aprovados">
+                <div class="box-status-eventos-aprovados">
                     <h4>Aprovados</h4>
                     <p>@Model.EventosAprovados</p>
                 </div>
-                <div class="box-status-eventos pendentes">
+                <div class="box-status-eventos-pendentes">
                     <h4>Pendentes</h4>
                     <p>@Model.EventosPendentes</p>
                 </div>
-                <div class="box-status-eventos reprovados">
+                <div class="box-status-eventos-reprovados">
                     <h4>Reprovados</h4>
                     <p>@Model.EventosReprovados</p>
                 </div>
@@ -41,7 +41,7 @@
                 <tfoot>
                     <tr>
                         <td colspan="10">
-                            <p>Eventos atualizados em @DateTime.Now</p>
+                            <p><b>Eventos atualizados em @DateTime.Now</b></p>
                         </td>
                     </tr>
                 </tfoot>

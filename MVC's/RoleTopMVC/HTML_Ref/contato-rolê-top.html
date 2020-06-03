@@ -17,15 +17,20 @@
             
             <div class="section-container">
                 <ul>
-                    <li><a href="rolê-top-index.html#inicio">Início</a></li>
-                    <li><a href="galeria-rolê-top.html#galeria">Galeria</a></li>
-                    <li><a href="contato-rolê-top.html#contato">Contato</a></li>
-                    <li><a href="login-rolê-top.html#login">Login</a></li>
+                        <li id="bt-mobile-menu">
+                                <a href="javascript:void(0);" class="icon" onclick="toggleMobileMenu()">
+                                    <i class="fas fa-bars" aria-hidden="true">
+                                    </i>
+                                </a>
+                            </li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="rolê-top-index.html#inicio">Início</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="galeria-rolê-top.html">Galeria</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="contato-rolê-top.html#contato">Contato</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="estrutura-role-top.html">Estrutura</a></li>
+                    <li class="bt-common-menu"><a onclick="toggleMobileMenu()" href="login-rolê-top.html#login">Login</a></li>
                 </ul>
             </div>
         </nav>
-
-        <br />
 
         <h2><i>Contato</i></h2>
 
@@ -39,23 +44,42 @@
 
         <br />
 
-        <p><strong>E-mail:</strong> rolêtop@email.com</p>
-        <p><strong>Telefone:</strong> 1234-5678 </p>
-        <p><strong>Whatsapp:</strong> 91234-5678</p>
+        <p><strong>E-mail:</strong> rolêtop@email.com</p> <br />
+        <p><strong>Telefone:</strong> (11) 1234-5678 </p>    <br />
+        <p><strong>Whatsapp:</strong> (11) 91234-5678</p>    <br />
         </div>
         
     </main>
 
-    <br />
+    <script>
+        function toggleMobileMenu() {
+            var ul = document.querySelector("nav ul");
+            var commonButtons = document.querySelectorAll("nav .bt-common-menu");
+            var icon = document.querySelector(".icon > i");
 
-    <div class="faq-e-chat">
-    <a href="FAQ">FAQ</a>
-    <a href="Chat online">Chat online</a>
-    </div>
+            ul.classList.toggle("mobile-mode");
 
-    <footer>
-            
-    </footer>
+            if (icon.classList.contains("fa-bars")) {
+                icon.classList.remove("fa-bars");
+                icon.classList.remove("fa");
+
+                icon.classList.add("fas");
+                icon.classList.add("fa-angle-down");
+            } else {
+                icon.classList.remove("fas");
+                icon.classList.remove("fa-angle-down");
+
+                icon.classList.add("fa");
+                icon.classList.add("fa-bars");
+            }
+
+            for (var button of commonButtons) {
+                button.classList.toggle("active");
+            }
+
+        }
+
+    </script>
 
 </body>
 </html>

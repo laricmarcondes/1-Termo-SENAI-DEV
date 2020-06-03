@@ -6,7 +6,7 @@
 body {
     font-family: 'Calibri', 'Open Sans', sans-serif;
     text-align: center;
-    background-color: #BE3966;
+    background-color: #f5f5f5;
     height: 50%;
 }
 
@@ -20,11 +20,6 @@ section {
 
 li {
     margin: 1em;
-}
-
-footer {
-    background-color: #eaa93d;
-    height: 3em;
 }
 
 /******************************************************************
@@ -131,16 +126,6 @@ table a {
 
 table a:hover {
     text-decoration: underline;
-}
-
-tfoot td {
-    text-align: center;
-    color: #000;
-    background-color: #eaa93d;
-}
-
-.rodapé {
-    padding-block-start: 4em;
 }
 
 @media (max-width: 625px) {
