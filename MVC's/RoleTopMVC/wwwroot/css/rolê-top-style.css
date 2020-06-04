@@ -3,24 +3,25 @@
     padding: 0;
 }
 
-body {
-    font-family: 'Calibri', 'Open Sans', sans-serif;
+/************************LOGO - INÍCIO***************************/
+#logo-area {
+    background-image: url(img/fundo_logo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #503c96;
     text-align: center;
-    background-color: #f5f5f5;
+    padding: 5px;
 }
 
-h1{
-    display: none;
+#logo {
+    height:10%;
+    width: 10%;
 }
 
-section {
-    text-align: center;
-}
+/**************************LOGO - FIM****************************/
 
-/******************************************************************
-                            NAV - INÍCIO
-******************************************************************/
-
+/**************************NAV - INÍCIO*************************/
 nav {
     background-color: #503c96;
 }
@@ -55,39 +56,27 @@ nav ul > li > a:hover {
 
 a.active {
     color: #503c96;
-}
+} 
+/**************************NAV - FIM****************************/
 
-/******************************************************************
-                            NAV - FIM
-******************************************************************/
-
-/******************************************************************
-                            LOGO - INÍCIO
-******************************************************************/
-
-#logo-area {
-    background-image: url(img/fundo_logo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-color: #503c96;
+body {
+    font-family: 'Calibri', 'Open Sans', sans-serif;
     text-align: center;
-    padding: 5px;
+    background-color: #f5f5f5;
 }
 
-#logo {
-    height:10%;
-    width: 10%;
+section {
+    text-align: center;
 }
 
-/******************************************************************
-                            LOGO - FIM
-******************************************************************/
+h1{
+    display: none;
+}
 
-
-/******************************************************************
-                                #
-******************************************************************/
+h2 {
+    font-size: 1.5em;
+    padding: 2em;
+}
 
 #banner {
     text-align: left;
@@ -95,16 +84,14 @@ a.active {
 
 #texto {
     text-align: right;
-    padding: 3em;
 }
-
-/******************************************************************
-                                .
-******************************************************************/
 
 .flex-group.banner-section {
     align-items: center;
     font-size: 1.7em;
+    flex: auto; 
+    display: flex;
+    justify-content: center; 
 }
 
 .flex-group {
@@ -114,28 +101,26 @@ a.active {
 }
 
 .banner-container {
-    margin: 0;
-    padding-right: 6em;
+    padding-right: 7.2em;
 }
 
 .text-container {
-    padding-right: 6em;
+    padding-right: 7.26em;
 }
 
 .fa-bars:before {
     content: "\f0c9";
 }
 
-h2 {
-    font-size: 1.2em;
-    padding-block-end: 1em;
-}
-
 nav #bt-mobile-menu {
     display: none;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1000px) {    
+
+    #logo{
+        width: 25%;
+    }
     
     nav #bt-mobile-menu {
         display: block;
@@ -143,7 +128,6 @@ nav #bt-mobile-menu {
 
     nav .bt-common-menu {
         display: none;
-
     }
 
     nav .bt-common-menu.active {
@@ -153,5 +137,22 @@ nav #bt-mobile-menu {
     nav ul.mobile-mode {
         display: flex;
         flex-direction: column;
+    }
+
+    #texto {
+        padding: 0;
+    }
+
+    .banner-container {
+        padding-right: 0;
+    }
+
+    .flex-group.banner-section {
+        font-size: 1.6em;
+    }
+
+    .text-container {
+        padding: 15px 20px;
+        padding-block-end: 1.2em;
     }
 }

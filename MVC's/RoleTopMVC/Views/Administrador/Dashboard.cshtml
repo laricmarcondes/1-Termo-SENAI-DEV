@@ -1,6 +1,8 @@
 @model RoleTopMVC.ViewModels.DashboardViewModel
+
 <main>
         <h2>Dashboard</h2>
+
         <section id="status-eventos">
             <h3>Status dos eventos</h3>
             <br />
@@ -24,6 +26,7 @@
 
         <section id="lista-eventos">
             <h3>Lista de eventos</h3>
+            
             <table>
                 <thead>
                     <tr>
@@ -38,32 +41,34 @@
                         <th colspan="2" rowspan="2">Aprovar</th>
                     </tr>
                 </thead>
-                <tfoot>
+
+            <tfoot>
+                <tr>
+                    <td colspan="10">
+                        <p><b>Eventos atualizados em @DateTime.Now</b></p>
+                    </td>
+                </tr>
+            </tfoot>
+
+            <tbody>
+                @foreach(var evento in Model.Eventos)
+                {
                     <tr>
-                        <td colspan="10">
-                            <p><b>Eventos atualizados em @DateTime.Now</b></p>
-                        </td>
+                        <td>@evento.Cliente.Nome</td>
+                        <td>@evento.Cliente.Email</td>
+                        <td>@evento.Cliente.Telefone</td>
+                        <td>@evento.DataDoEvento.Nome</td>
+                        <td>@evento.Hora.Nome</td>
+                        <td>@evento.TipoEvento.Nome</td>
+                        <td>@evento.ServicosAdicionais.Nome</td>
+                        <td>@evento.Descricao.Nome</td>
+
+                        <td><a href='@Url.Action("Aprovar", "CadastroEvento", new {id = @evento.Id})'><i class="fas fa-check"></i></a></td>
+                        <td><a href='@Url.Action("Reprovar", "CadastroEvento", new {id = @evento.Id})'><i class="fas fa-times"></i></a></td>
                     </tr>
-                </tfoot>
-                <tbody>
-                    @foreach(var evento in Model.Eventos)
-                    {
-                        <tr>
-                            <td>@evento.Cliente.Nome</td>
-                            <td>@evento.Cliente.Email</td>
-                            <td>@evento.Cliente.Telefone</td>
-                            <td>@evento.DataDoEvento.Nome</td>
-                            <td>@evento.Hora.Nome</td>
-                            <td>@evento.TipoEvento.Nome</td>
-                            <td>@evento.ServicosAdicionais.Nome</td>
-                            <td>@evento.Descricao.Nome</td>
-
-                            <td><a href='@Url.Action("Aprovar", "CadastroEvento", new {id = @evento.Id})'><i class="fas fa-check"></i></a></td>
-                            <td><a href='@Url.Action("Reprovar", "CadastroEvento", new {id = @evento.Id})'><i class="fas fa-times"></i></a></td>
-                        </tr>
-                    }
-                </tbody>
-            </table>
-        </section>
-
-    </main>
+                }
+            </tbody>
+            
+        </table>
+    </section>
+</main>

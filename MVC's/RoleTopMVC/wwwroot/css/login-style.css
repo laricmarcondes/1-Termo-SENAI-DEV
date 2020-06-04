@@ -3,37 +3,25 @@
     padding: 0;
 }
 
-body {
-    font-family: 'Calibri', 'Open Sans', sans-serif;
+/************************LOGO - INÍCIO***************************/
+#logo-area {
+    background-image: url(img/fundo_logo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #503c96;
     text-align: center;
-    background-color: #f5f5f5;
+    padding: 5px;
 }
 
-h1{
-    display: none;
+#logo {
+    height:10%;
+    width: 10%;
 }
 
-h2 {
-    padding : 1em;
-    color: #503c96;
-}
+/**************************LOGO - FIM****************************/
 
-section {
-    text-align: center;
-}
-
-a {
-    color: #000000;
-    padding-block-end: 6.1em;
-}
-
-main {
-    font-size: 1.2em;
-}
-/******************************************************************
-                            NAV - INÍCIO
-******************************************************************/
-
+/**************************NAV - INÍCIO*************************/
 nav {
     background-color: #503c96;
 }
@@ -68,42 +56,41 @@ nav ul > li > a:hover {
 
 a.active {
     color: #503c96;
-}
+} 
+/**************************NAV - FIM****************************/
 
-/******************************************************************
-                            NAV - FIM
-******************************************************************/
-
-/******************************************************************
-                            LOGO - INÍCIO
-******************************************************************/
-
-#logo-area {
-    background-image: url(img/fundo_logo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-color: #503c96;
+body {
+    font-family: 'Calibri', 'Open Sans', sans-serif;
     text-align: center;
-    padding: 5px;
+    background-color: #f5f5f5;
+
 }
 
-#logo {
-    height:10%;
-    width: 10%;
+main {
+    font-size: 1.2em;
 }
 
-/******************************************************************
-                            LOGO - FIM
-******************************************************************/
+section {
+    text-align: center;
+}
 
-.fa-bars:before {
-    content: "\f0c9";
+h1{
+    display: none;
+}
+
+h2 {
+    font-size: 1.5em;
+    padding : 1em;
+    color: #503c96;
 }
 
 form * {
     text-align: center;
     overflow: hidden;
+}
+
+form  a {
+    padding-block-end: 7em;
 }
 
 form input, form select {
@@ -130,7 +117,15 @@ nav #bt-mobile-menu {
     display: none;
 }
 
+.fa-bars:before {
+    content: "\f0c9";
+}
+
 @media (max-width: 1000px) {
+
+    #logo{
+        width: 25%;
+    }
     
     nav #bt-mobile-menu {
         display: block;
@@ -148,5 +143,9 @@ nav #bt-mobile-menu {
     nav ul.mobile-mode {
         display: flex;
         flex-direction: column;
+    }
+
+    form input, form select {
+        width: 35%;
     }
 }

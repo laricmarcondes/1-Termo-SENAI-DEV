@@ -3,14 +3,27 @@
     padding: 0;
 }
 
+/***************************LOGO - INÍCIO****************************/
+#logo-area {
+    background-image: url(img/fundo_logo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #503c96;
+    text-align: center;
+    padding: 5px;
+}
+
+#logo {
+    height:10%;
+    width: 10%;
+}
+/***************************LOGO - FIM**************************/   
+
 body {
     font-family: 'Calibri', 'Open Sans', sans-serif;
     text-align: center;
     background-color: #f5f5f5;
-}
-
-h1{
-    display: none;
 }
 
 section {
@@ -22,7 +35,12 @@ main {
     font-size: 1.2em;
 }
 
+h1{
+    display: none;
+}
+
 h2 {
+    font-size: 1.5em;
     padding: 1em;
     color: #503c96;
 }
@@ -43,51 +61,6 @@ a {
     font-size: 1.2em;
 }
 
-form input[type="submit"] {
-    font-size: 0.8em;
-    background-color: #503c96;
-    border: 1px solid #503c96;
-    color: #f5f5f5;
-    margin: 20px 0;
-    height: 2em;
-    width: 15em;;
-    border-radius: 3px;
-    font-weight: bold;
-    text-align: center;
-}
-
-table {
-    text-align: center;
-    color: #503c96;
-    border: 1px dashed #503c96;
-    width: 100%;
-    padding: 5px;
-    word-break: normal;
-}
-
-/******************************************************************
-                            LOGO - INÍCIO
-******************************************************************/
-
-#logo-area {
-    background-image: url(img/fundo_logo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-color: #503c96;
-    text-align: center;
-    padding: 5px;
-}
-
-#logo {
-    height:10%;
-    width: 10%;
-}
-
-/******************************************************************
-                            LOGO - FIM
-******************************************************************/
-
 .nome-e-foto-do-cliente {
     display: flex;
     flex-direction: row;
@@ -106,6 +79,19 @@ table {
     padding: 1em;
 }
 
+form input[type="submit"] {
+    font-size: 0.8em;
+    background-color: #503c96;
+    border: 1px solid #503c96;
+    color: #f5f5f5;
+    margin: 20px 0;
+    height: 2em;
+    width: 15em;;
+    border-radius: 3px;
+    font-weight: bold;
+    text-align: center;
+}
+
 form * {
     margin: 5px 0;
     text-align: center;
@@ -113,7 +99,7 @@ form * {
 }
 
 form input, form select {
-    width: 10%;
+    width: 15%;
     height: 23px;
     text-align: left;
     padding: 0 2px;
@@ -132,8 +118,30 @@ textarea {
     width: 15%;
 }
 
+table {
+    text-align: center;
+    color: #503c96;
+    border: 1px dashed #503c96;
+    width: 100%;
+    padding: 5px;
+    word-break: normal;
+}
+
 @media (max-width: 625px) {
-    main {
-        width: 90%;
+
+    #logo{
+        width: 25%;
+    }
+
+    main table {
+        width: 100%;
+    }
+
+    form input, form select {
+        width: 35%;
+    }
+
+    #descricao {
+        width: 35%;
     }
 }

@@ -3,54 +3,7 @@
     padding: 0;
 }
 
-body {
-    font-family: 'Calibri', 'Open Sans', sans-serif;
-    text-align: center;
-    background-color: #f5f5f5;
-}
-
-h1{
-    display: none;
-}
-
-section {
-    text-align: center;
-}
-
-li {
-    margin: 1em;
-}
-
-main {
-    padding: 1em;
-    font-size: 1.2em;
-}
-
-h2 {
-    padding: 1em;
-    color: #503c96;
-}
-
-h3 {
-    padding: 1.3em;
-}
-
-a {
-    text-decoration: none;
-    color: #000000;
-    font-weight: bold;
-    list-style-type: none;
-}
-
-#voltar {
-    text-align: left;
-    font-size: 1.2em;
-}
-
-/******************************************************************
-                            LOGO - INÍCIO
-******************************************************************/
-
+/************************LOGO - INÍCIO***************************/
 #logo-area {
     background-image: url(img/fundo_logo.jpg);
     background-repeat: no-repeat;
@@ -65,10 +18,51 @@ a {
     height:10%;
     width: 10%;
 }
+/**************************LOGO - FIM****************************/
 
-/******************************************************************
-                            LOGO - FIM
-******************************************************************/
+body {
+    font-family: 'Calibri', 'Open Sans', sans-serif;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+main {
+    padding: 1em;
+    font-size: 1.2em;
+}
+
+section {
+    text-align: center;
+}
+
+h1{
+    display: none;
+}
+
+h2 {
+    padding: 1em;
+    color: #503c96;
+}
+
+h3 {
+    padding: 1.3em;
+}
+
+li {
+    margin: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    list-style-type: none;
+}
+
+#voltar {
+    text-align: left;
+    font-size: 1.2em;
+}
 
 .nome-e-foto-do-cliente {
     display: flex;
